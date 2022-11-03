@@ -10,6 +10,7 @@ import {
   ATTENDANCE_DELETE_FAIL,
 } from "../constants/attendanceConstant";
 import axios from "axios";
+import {baseurl} from '../config/urls'
 
 export const postAttendance = (attendance) => async (dispatch, getState) => {
   try {
@@ -23,7 +24,7 @@ export const postAttendance = (attendance) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.post(`/attendance/`, attendance, config);
+    const { data } = await axios.post(`${baseurl}/attendance/`, attendance, config);
     dispatch({
       type: ATTENDANCE_DATA_ENTER_SUCCESS,
       payload: data,
@@ -51,7 +52,7 @@ export const getAnalysisByDate = (date) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.post(
-      `/attendance/getAnalysis`,
+      `${baseurl}/attendance/getAnalysis`,
       { date: date },
       config
     );
@@ -82,7 +83,7 @@ export const deleteAttendanceByDate = (days) => async (dispatch, getState) => {
         Authorization: `Bearer ${userInfo.token}`,
       },
     };
-    const { data } = await axios.delete(`/attendance/${days}`, config);
+    const { data } = await axios.delete(`${baseurl}/attendance/${days}`, config);
 
     dispatch({
       type: ATTENDANCE_DELETE_SUCCESS,

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/SRMCEM_HOSTEL_MANAGEMENT/static/css/main.1ff10be6.chunk.css",
+    "main.js": "/SRMCEM_HOSTEL_MANAGEMENT/static/js/main.d8628966.chunk.js",
+    "main.js.map": "/SRMCEM_HOSTEL_MANAGEMENT/static/js/main.d8628966.chunk.js.map",
+    "runtime-main.js": "/SRMCEM_HOSTEL_MANAGEMENT/static/js/runtime-main.de27970a.js",
+    "runtime-main.js.map": "/SRMCEM_HOSTEL_MANAGEMENT/static/js/runtime-main.de27970a.js.map",
+    "static/css/2.1cb30e7f.chunk.css": "/SRMCEM_HOSTEL_MANAGEMENT/static/css/2.1cb30e7f.chunk.css",
+    "static/js/2.8ae55d16.chunk.js": "/SRMCEM_HOSTEL_MANAGEMENT/static/js/2.8ae55d16.chunk.js",
+    "static/js/2.8ae55d16.chunk.js.map": "/SRMCEM_HOSTEL_MANAGEMENT/static/js/2.8ae55d16.chunk.js.map",
+    "static/js/3.674f1f12.chunk.js": "/SRMCEM_HOSTEL_MANAGEMENT/static/js/3.674f1f12.chunk.js",
+    "static/js/3.674f1f12.chunk.js.map": "/SRMCEM_HOSTEL_MANAGEMENT/static/js/3.674f1f12.chunk.js.map",
+    "index.html": "/SRMCEM_HOSTEL_MANAGEMENT/index.html",
+    "static/css/2.1cb30e7f.chunk.css.map": "/SRMCEM_HOSTEL_MANAGEMENT/static/css/2.1cb30e7f.chunk.css.map",
+    "static/css/main.1ff10be6.chunk.css.map": "/SRMCEM_HOSTEL_MANAGEMENT/static/css/main.1ff10be6.chunk.css.map",
+    "static/js/2.8ae55d16.chunk.js.LICENSE.txt": "/SRMCEM_HOSTEL_MANAGEMENT/static/js/2.8ae55d16.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de27970a.js",
+    "static/css/2.1cb30e7f.chunk.css",
+    "static/js/2.8ae55d16.chunk.js",
+    "static/css/main.1ff10be6.chunk.css",
+    "static/js/main.d8628966.chunk.js"
+  ]
+}

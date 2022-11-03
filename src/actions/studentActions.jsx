@@ -19,6 +19,7 @@ import {
   STUDENT_ROOM_NO_ERROR,
 } from "../constants/studentConstant";
 import axios from "axios";
+import {baseurl} from '../config/urls'
 
 export const listStudents = (keyword = "", pageNumber = "") => async (
   dispatch,
@@ -36,7 +37,7 @@ export const listStudents = (keyword = "", pageNumber = "") => async (
     };
 
     const { data } = await axios.get(
-      `/student/all?keyword=${keyword}&pageNumber=${pageNumber}`,
+      `${baseurl}/student/all?keyword=${keyword}&pageNumber=${pageNumber}`,
       config
     );
     dispatch({
@@ -66,7 +67,7 @@ export const addStudent = (student) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.post(`/student/addStudent`, student, config);
+    const { data } = await axios.post(`${baseurl}/student/addStudent`, student, config);
 
     dispatch({
       type: STUDENT_ADD_SUCCESS,
@@ -95,7 +96,7 @@ export const getStudentDetails = (id) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`/student/${id}`, config);
+    const { data } = await axios.get(`${baseurl}/student/${id}`, config);
 
     dispatch({
       type: STUDENT_DETAILS_SUCCESS,
@@ -124,7 +125,7 @@ export const updateStudent = (student) => async (dispatch, getState) => {
       },
     };
     const { data } = await axios.put(
-      `/student/${student._id}`,
+      `${baseurl}/student/${student._id}`,
       student,
       config
     );
@@ -156,7 +157,7 @@ export const deleteStudent = (id) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.delete(`/student/${id}`, config);
+    const { data } = await axios.delete(`${baseurl}/student/${id}`, config);
 
     dispatch({
       type: STUDENT_DELETE_SUCCESS,
@@ -185,7 +186,7 @@ export const getStudentsByRoomNo = (roomNo) => async (dispatch, getState) => {
       },
     };
 
-    const { data } = await axios.get(`/student/room/${roomNo}`, config);
+    const { data } = await axios.get(`${baseurl}/student/room/${roomNo}`, config);
     dispatch({
       type: STUDENT_ROOM_NO_SUCCESS,
       payload: data,
