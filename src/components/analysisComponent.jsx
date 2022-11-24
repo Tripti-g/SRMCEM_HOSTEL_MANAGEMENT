@@ -10,6 +10,7 @@ const AnalysisComponent = () => {
 
   const { loading, error, attendance } = attendanceAnalysis;
   const [data, setData] = useState([]);
+  const sf = false;
   const [headers, setHeaders] = useState([]);
   useEffect(() => {
     if (attendance) {
