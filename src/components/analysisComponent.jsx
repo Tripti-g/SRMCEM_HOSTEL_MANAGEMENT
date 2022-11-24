@@ -7,7 +7,7 @@ import { CSVLink } from "react-csv";
 
 const AnalysisComponent = () => {
   const attendanceAnalysis = useSelector((state) => state.attendanceAnalysis);
-  const ffloader = false;
+
   const { loading, error, attendance } = attendanceAnalysis;
   const [data, setData] = useState([]);
   const [headers, setHeaders] = useState([]);
