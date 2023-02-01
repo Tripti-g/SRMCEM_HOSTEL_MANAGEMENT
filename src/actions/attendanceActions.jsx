@@ -40,7 +40,7 @@ export const postAttendance = (attendance) => async (dispatch, getState) => {
   }
 };
 
-export const getAnalysisByDate = (date) => async (dispatch, getState) => {
+export const  getAnalysisByDate = (date) => async (dispatch, getState) => {
   try {
     dispatch({ type: ATTENDANCE_ANALYSIS_REQUEST });
     const {
